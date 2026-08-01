@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Management</h1>
+
+      <input type="hidden" id="studentId" />
+
+      <input type="text" id="name" placeholder="Enter Name" />
+
+      <input type="number" id="age" placeholder="Enter Age" />
+
+      <button onclick="saveStudent()">Save Student</button>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody id="studentTable"></tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
